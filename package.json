@@ -51,12 +51,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tfiechowski/react-sample-components-library.git"
+    "url": "git+https://github.com/SyntesyDigital/ArquitectComponentsLibrary.git"
   },
   "bugs": {
-    "url": "https://github.com/tfiechowski/react-sample-components-library/issues"
+    "url": "https://github.com/SyntesyDigital/ArquitectComponentsLibrary/issues"
   },
-  "homepage": "https://github.com/tfiechowski/react-sample-components-library#readme",
+  "homepage": "https://github.com/SyntesyDigital/ArquitectComponentsLibrary#readme",
   "directories": {
     "lib": "lib"
   },
