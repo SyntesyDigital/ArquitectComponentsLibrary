@@ -5,6 +5,7 @@ import external from "rollup-plugin-peer-deps-external";
 import { terser } from "rollup-plugin-terser";
 import { uglify } from "rollup-plugin-uglify";
 import packageJSON from "./package.json";
+import sass from 'rollup-plugin-sass';
 
 const input = "./src/index.js";
 const minifyExtension = pathToFile => pathToFile.replace(/\.js$/, ".min.js");
@@ -24,7 +25,10 @@ export default [
       }),
       external(),
       resolve(),
-      commonjs()
+      commonjs(),
+      sass({
+        insert: true,
+      })
     ]
   },
   {
@@ -41,7 +45,10 @@ export default [
       external(),
       resolve(),
       commonjs(),
-      uglify()
+      uglify(),
+      sass({
+        insert: true,
+      })
     ]
   },
   // UMD
@@ -64,7 +71,10 @@ export default [
       }),
       external(),
       resolve(),
-      commonjs()
+      commonjs(),
+      sass({
+        insert: true,
+      })
     ]
   },
   {
@@ -87,6 +97,9 @@ export default [
       external(),
       resolve(),
       commonjs(),
+      sass({
+        insert: true,
+      }),
       terser()
     ]
   },
@@ -105,6 +118,9 @@ export default [
       }),
       external(),
       resolve(),
+      sass({
+        insert: true,
+      }),
       commonjs()
     ]
   },
@@ -123,6 +139,9 @@ export default [
       external(),
       resolve(),
       commonjs(),
+      sass({
+        insert: true,
+      }),
       terser()
     ]
   }
