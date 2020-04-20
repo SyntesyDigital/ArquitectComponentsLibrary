@@ -4,9 +4,9 @@ A very simple IconField.
 import { IconField } from "architect-components-library";
 
 <IconField
-  label={"Label"}
-  name={"name"}
-  value={"value"}
-  onChange={"handler"}
-/>
-``` 
+  label={"Icone"}
+  name={"icon"}
+  // value={this.props.form.form.icon}
+  // onChange={this.props.updateField}
+/>;
+```

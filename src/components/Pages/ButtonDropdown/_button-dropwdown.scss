@@ -1,0 +1,13 @@
+.button-dropdown {
+    a.dropdown-item.text-danger {
+      i {
+        color: #fc4b6c;
+      }
+      color: #fc4b6c;
+  
+      &:hover, &:focus, &:active {
+        color: #fc4b6c;
+      }
+    }
+  }
+  
