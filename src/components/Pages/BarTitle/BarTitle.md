@@ -1,4 +1,4 @@
-A very simple IconField.
+A very simple BarTitle.
 
 ```jsx
 import { BarTitle } from "architect-components-library";

@@ -1,9 +1,7 @@
 A very simple IconField.
 
 ```jsx
-import { BoxWithIcon } from "architect-components-library";
-import { BoxList } from "architect-components-library";
-import { BoxAdd } from "architect-components-library";
+import { BoxWithIcon, BoxList, BoxAdd } from "architect-components-library";
 
 <BoxList>
   <BoxWithIcon icon={"fa fa-eye"} name={"Opcion 1"} />

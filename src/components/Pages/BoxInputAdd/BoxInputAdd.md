@@ -5,7 +5,7 @@ import { BoxInputAdd } from "architect-components-library";
 
 <div className="col-md-4">
   <BoxInputAdd 
-        onClick={'handler')} 
+        onClick={'handler'} 
   />
 </div>;
 ```

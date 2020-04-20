@@ -1,4 +1,4 @@
-A very simple IconField.
+A very simple BoxWithIcon.
 
 ```jsx
 import { BoxWithIcon } from "architect-components-library";

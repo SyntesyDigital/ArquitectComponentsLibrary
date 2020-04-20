@@ -1,4 +1,4 @@
-A very simple IconField.
+A very simple Separator.
 
 ```jsx
 import { Separator } from "architect-components-library";

@@ -1,4 +1,4 @@
-A very simple IconField.
+A very simple FieldListItem.
 
 ```jsx
 import { FieldListItem } from "architect-components-library";

@@ -1,4 +1,4 @@
-A very simple IconField.
+A very simple ButtonDropdown.
 
 ```jsx
 import { ButtonDropdown } from "architect-components-library";

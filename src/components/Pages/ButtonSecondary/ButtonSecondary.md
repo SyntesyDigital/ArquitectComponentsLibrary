@@ -1,4 +1,4 @@
-A very simple IconField.
+A very simple ButtonSecondary.
 
 ```jsx
 import { ButtonSecondary } from "architect-components-library";

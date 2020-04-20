@@ -1,4 +1,4 @@
-A very simple IconField.
+A very simple CollapsableGroup.
 
 ```jsx
 import { CollapsableGroup } from "architect-components-library";

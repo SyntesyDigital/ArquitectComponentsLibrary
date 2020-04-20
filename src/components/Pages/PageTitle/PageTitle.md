@@ -1,4 +1,4 @@
-A very simple IconField.
+A very simple PageTitle.
 
 ```jsx
 import { PageTitle } from "architect-components-library";
