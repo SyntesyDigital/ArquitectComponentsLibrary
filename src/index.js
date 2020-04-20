@@ -21,7 +21,7 @@ export { default as CollapsableGroup } from "./components/Pages/CollapsableGroup
 export { default as DragField } from "./components/Pages/DragField/DragField";
 export { default as PageTitle } from "./components/Pages/PageTitle/PageTitle";
 export { default as Separator } from "./components/Pages/Separator/Separator";
-export { default as SideBarTitle } from "./components/Pages/SideBarTitle/SideBarTitle";
+export { default as SideBarTitle } from "./components/Pages/SideBarTitle/SidebarTitle";
 export { default as TabButton } from "./components/Pages/TabButton/TabButton";
 
 import './library.scss';
