@@ -4,6 +4,7 @@ export { default as IconField } from "./components/Forms/IconField/IconField";
 export { default as SelectField } from "./components/Forms/SelectField/SelectField";
 export { default as FieldListItem } from "./components/Forms/FieldListItem/FieldListItem";
 export { default as FieldList } from "./components/Forms/FieldList/FieldList";
+export { default as ToggleField } from "./components/Forms/ToggleField/ToggleField";
 
 export { default as Modal } from "./components/Components/Modal/Modal";
 

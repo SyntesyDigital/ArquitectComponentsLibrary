@@ -37,6 +37,7 @@ module.exports = {
             'src/components/Forms/SelectField/SelectField.js',
             'src/components/Forms/FieldListItem/FieldListItem.js',
             'src/components/Forms/FieldList/FieldList.js',
+            'src/components/Forms/ToggleField/ToggleField.js',
           ],
           exampleMode: 'expand', // 'hide' | 'collapse' | 'expand'
           usageMode: 'hide',
