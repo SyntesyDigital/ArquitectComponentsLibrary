@@ -16,3 +16,5 @@ export default  class FieldList extends Component {
     }
 }
 
+FieldList.propTypes = {
+};
