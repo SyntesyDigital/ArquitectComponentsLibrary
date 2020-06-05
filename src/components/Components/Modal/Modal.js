@@ -57,30 +57,30 @@ export default class Modal extends Component {
     this.props.onSubmit();
   }
 
-  onRemove(e){
+  onRemove(e) {
     e.preventDefault();
 
     var _this = this;
 
     bootbox.confirm({
-      message: this.props.rempoveMessage !== undefined ? 
-      this.props.rempoveMessage : Lang.get('fields.delete_row_alert'),
+      message: this.props.rempoveMessage !== undefined ?
+        this.props.rempoveMessage : this.props.deleteRowText ? this.props.deleteRowText : 'Delete row',
       buttons: {
-          confirm: {
-              label: Lang.get('fields.si') ,
-              className: 'btn-primary'
-          },
-          cancel: {
-              label:  Lang.get('fields.no'),
-              className: 'btn-default'
-          }
+        confirm: {
+          label: this.props.yesText ? this.props.yesText : 'yes',
+          className: 'btn-primary'
+        },
+        cancel: {
+          label: this.props.noText ? this.props.noText : 'no',
+          className: 'btn-default'
+        }
       },
       callback: function (result) {
-          if(result){
-              _this.props.onRemove();
-          }
+        if (result) {
+          _this.props.onRemove();
         }
-      });
+      }
+    });
   }
 
   render() {
@@ -117,19 +117,19 @@ export default class Modal extends Component {
             <div className="modal-footer">
               {deleteButton &&
                 <a href="" className="btn btn-link text-danger" onClick={this.onRemove.bind(this)}>
-                  <i className="fas fa-trash-alt"></i> &nbsp; {Lang.get('fields.delete')}
+                  <i className="fas fa-trash-alt"></i> &nbsp; {this.props.deleteText ? this.props.deleteText : 'Delete'}
                 </a>
               }
               &nbsp;
               {cancelButton &&
                 <a href="" className="btn btn-default" onClick={this.onModalClose}>
-                  {Lang.get('fields.cancel')}
+                  {this.props.cancelText ? this.props.cancelText : 'Cancel'}
                 </a>
               }
               &nbsp;
                   {submitButton &&
                 <a href="" className="btn btn-primary" onClick={this.onSubmit.bind(this)}>
-                  {Lang.get('fields.save')}
+                  {this.props.saveText ? this.props.saveText : 'Save'}
                 </a>
               }
               &nbsp;
@@ -149,7 +149,14 @@ Modal.propTypes = {
   title: PropTypes.string.isRequired,
   display: PropTypes.bool.isRequired,
   zIndex: PropTypes.number.isRequired,
-  
+
+  deleteText: PropTypes.string,
+  cancelText: PropTypes.string,
+  saveText: PropTypes.string,
+  deleteRowText: PropTypes.string,
+  yesText: PropTypes.string,
+  noText: PropTypes.string,
+
   submitButton: PropTypes.bool,
   cancelButton: PropTypes.bool,
   deleteButton: PropTypes.bool,
