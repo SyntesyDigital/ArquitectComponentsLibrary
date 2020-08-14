@@ -1153,7 +1153,7 @@ export default class IconField extends Component {
 
         return (
             <div className="form-group bmd-form-group icon-field">
-                <label htmlFor={this.props.name} className="bmd-label-floating">{this.props.label}</label>
+                {!this.props.labelHide ? <label htmlFor={this.props.name} className="bmd-label-floating">{this.props.label}</label> : null}
                 <Select
                     id={this.props.name}
                     name={this.props.name}
@@ -1168,6 +1168,8 @@ export default class IconField extends Component {
 
 IconField.propTypes = {
     label: PropTypes.string.isRequired,
+    labelHide: PropTypes.bool,
+
     name: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func
