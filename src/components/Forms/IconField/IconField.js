@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Select from 'react-select';
 
 const fontAwesomeIcons = {
+    'Sélectionner...' : '',
     'fas fa-address-book' : 'f2b9',
     'fas fa-address-card' : 'f2bb',
     'fas fa-adjust' : 'f042',
